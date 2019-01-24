@@ -1,0 +1,6 @@
+<!-- <p>{{user | json}}</p> -->
+<p>Welcome, {{user.email}}</p>
+<ul>
+  <li *ngFor="let item of items | async">{{item.name}}</li>
+</ul>
+<button (click) = "logout()" type="button" class="btn btn-danger">logout</button>
